@@ -3,9 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "League Gothic", sans-serif;
-}
-
-html {
   scroll-behavior: smooth;
 }
 
@@ -73,6 +70,8 @@ hr {
 }
 .main__container {
   background-color: #e01a78;
+  height: 100vh;
+  overflow: auto;
 }
 .main__container__banner__section {
   position: relative;
@@ -110,4 +109,38 @@ hr {
   height: 3rem;
   font-size: 2rem;
   letter-spacing: 0.4px;
+}
+.main__container__featured__container {
+  display: inline-flex;
+  overflow: hidden;
+  padding-bottom: 5rem;
+}
+
+.main__container__featured__container__image {
+  transform: scale(1);
+  transition: all 0.8s;
+}
+.main__container__featured__container__image img {
+  width: auto;
+  height: 30rem;
+  object-fit: cover;
+}
+
+.main__container__featured__container__image:hover {
+  filter: brightness(80%) saturate(70%) contrast(120%) grayscale(10%);
+  transform: scale(1.1);
+}
+
+.photo {
+  width: 400px;
+  height: 350px;
+  overflow: hidden;
+}
+
+img {
+  transition: transform 0.25s;
+}
+
+.photo:hover img {
+  transform: scale(1.1);
 }
