@@ -64,9 +64,12 @@ hr {
   color: #fff;
 }
 
-.nav__item:hover {
+.nav__left a:hover {
   color: black;
   transform: scale(1.5);
+}
+.nav__item:hover {
+  color: black;
 }
 .main__container {
   background-color: #e01a78;
@@ -136,4 +139,9 @@ hr {
 .main__container__featured__container__figure img:hover {
   filter: brightness(80%) saturate(70%) contrast(120%) grayscale(10%);
   transform: scale(1.1);
+}
+.main__container__shop__container {
+  height: 20rem;
+  width: 20rem;
+  background-color: #fff;
 }
