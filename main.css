@@ -114,33 +114,17 @@ hr {
   display: inline-flex;
   overflow: hidden;
   padding-bottom: 5rem;
+  flex-flow: row wrap;
 }
-
-.main__container__featured__container__image {
-  transform: scale(1);
-  transition: all 0.8s;
-}
-.main__container__featured__container__image img {
-  width: auto;
-  height: 30rem;
-  object-fit: cover;
-}
-
-.main__container__featured__container__image:hover {
-  filter: brightness(80%) saturate(70%) contrast(120%) grayscale(10%);
-  transform: scale(1.1);
-}
-
-.photo {
-  width: 400px;
-  height: 350px;
+.main__container__featured__container__figure {
   overflow: hidden;
 }
-
-img {
-  transition: transform 0.25s;
+.main__container__featured__container__figure img {
+  display: block;
+  width: 50%;
+  transition: all 0.8s;
 }
-
-.photo:hover img {
+.main__container__featured__container__figure img:hover {
+  filter: brightness(80%) saturate(70%) contrast(120%) grayscale(10%);
   transform: scale(1.1);
 }
