@@ -72,15 +72,13 @@ hr {
   color: black;
 }
 .main__container {
-  background-color: #e01a78;
-  height: 100vh;
-  overflow: auto;
+  overflow: hidden;
 }
 .main__container__banner__section {
   position: relative;
+  background-color: #e01a78;
 }
 .main__container__banner {
-  width: 100vw;
   height: auto;
 }
 .main__container__button {
@@ -142,6 +140,46 @@ hr {
 }
 .main__container__shop__container {
   height: 20rem;
-  width: 20rem;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.main__container__shop__container__title {
+  display: flex;
+  justify-content: center;
+  font-size: 76px;
+  line-height: 1.4;
+  color: #e01a78;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.main__container__shop__container__tabs {
+  margin-top: 2rem;
+  text-align: center;
+}
+.main__container__shop__container__tabs ul {
+  /* list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center; */
+}
+.main__container__shop__container__tabs ul > li {
+  display: inline-block;
+  font-size: 2rem;
+  min-width: 9rem;
+  padding: 1rem;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+.main__container__shop__container__tabs ul > li:hover {
+  background-color: black;
+  color: #fff;
+}
+.main__container__shop__container__tabs ul > li.active {
+  color: #fff;
+  background-color: #e01a78;
+  cursor: default;
+  pointer-events: none;
 }
