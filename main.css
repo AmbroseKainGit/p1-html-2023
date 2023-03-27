@@ -139,7 +139,7 @@ hr {
   transform: scale(1.1);
 }
 .main__container__shop__container {
-  height: 20rem;
+  height: 50rem;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -158,20 +158,16 @@ hr {
   margin-top: 2rem;
   text-align: center;
 }
-.main__container__shop__container__tabs ul {
-  /* list-style-type: none;
-  display: flex;
-  gap: 3rem;
-  justify-content: center;
-  align-items: center; */
-}
 .main__container__shop__container__tabs ul > li {
   display: inline-block;
   font-size: 2rem;
   min-width: 9rem;
   padding: 1rem;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .main__container__shop__container__tabs ul > li:hover {
   background-color: black;
@@ -181,5 +177,29 @@ hr {
   color: #fff;
   background-color: #e01a78;
   cursor: default;
-  pointer-events: none;
+}
+.main__container__shop__container__tabs ul > li.active:hover {
+  color: #fff;
+  background-color: black;
+}
+.main__container__shop__container__cards {
+  background-color: red;
+  height: 50rem;
+}
+
+.main__container__shop__container__card__image__container {
+  position: absolute;
+  transition: all .5s ease;
+}
+
+.main__container__shop__container__card__alt__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.main__container__shop__container__card__image__container:hover .main__container__shop__container__card__alt__image {
+  opacity: 1;
 }
