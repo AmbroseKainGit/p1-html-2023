@@ -39,6 +39,7 @@
   justify-content: center;
   align-items: center;
   z-index: 10;
+  padding-right: 3rem;
 }
 
 .nav__right {
@@ -47,7 +48,7 @@
   align-items: center;
   gap: 2rem;
   width: 50%;
-  margin-right: 4rem;
+  padding-right: 4rem;
 }
 
 hr {
