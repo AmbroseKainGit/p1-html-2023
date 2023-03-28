@@ -190,7 +190,7 @@ hr {
 
 .main__container__shop__container__card__image__container {
   position: absolute;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .main__container__shop__container__card__alt__image {
@@ -198,9 +198,31 @@ hr {
   top: 0;
   left: 0;
   opacity: 0;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
-.main__container__shop__container__card__image__container:hover .main__container__shop__container__card__alt__image {
+.main__container__shop__container__card__image__container:hover
+  .main__container__shop__container__card__alt__image {
   opacity: 1;
+}
+
+.manny {
+  mix-blend-mode: multiply;
+  width: 2000px;
+  height: 300px;
+  background: url("tumblr_mcnkdmLQ6Q1r413h3o1_400.jpg") 0% 0% repeat-x;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  animation: slide 30s linear infinite;
+  opacity: 0.1;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 1014px;
+  }
 }
