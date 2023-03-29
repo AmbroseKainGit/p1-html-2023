@@ -184,13 +184,51 @@ hr {
   background-color: black;
 }
 .main__container__shop__container__cards {
-  background-color: red;
-  height: 50rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 8rem;
+  gap: 3rem;
+}
+.main__container__shop__container__card {
+  display: flex;
+  width: 20rem;
+  height: 20rem;
+}
+.main__container__shop__container__card__text__container {
+  padding-top: 24rem;
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+.main__container__shop__container__card__text__container span {
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease-in;
+  width: max-content;
+}
+
+.main__container__shop__container__card__text__container span:nth-of-type(1) {
+  color: #252634;
+}
+.main__container__shop__container__card__text__container span:nth-of-type(2) {
+  color: #e01a78;
+}
+.main__container__shop__container__card__text__container span:hover {
+  color: #e01a78;
 }
 
 .main__container__shop__container__card__image__container {
   position: absolute;
   transition: all 0.5s ease;
+}
+.main__container__shop__container__card__image__container figure img {
+  height: 20rem;
+  width: 20rem;
 }
 
 .main__container__shop__container__card__alt__image {
@@ -214,7 +252,7 @@ hr {
   position: absolute;
   top: 50%;
   left: 0;
-  animation: slide 30s linear infinite;
+  animation: slide 80s linear infinite;
   opacity: 0.1;
 }
 
